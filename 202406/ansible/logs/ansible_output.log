@@ -1,0 +1,142 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:01:56,189 p=2114 u=vagrant n=ansible | ERROR! - the directory ./roles/2do_parcial already exists. You can use --force to re-initialize this directory,
+however it will reset any main.yml files that may have
+been modified there already.
+2024-11-19 21:15:20,868 p=2406 u=vagrant n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:15:20,881 p=2406 u=vagrant n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2024-11-19 21:15:21,334 p=2406 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 21:15:21,335 p=2406 u=vagrant n=ansible | skipping: no hosts matched
+2024-11-19 21:15:21,335 p=2406 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 21:17:45,613 p=2449 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 21:17:45,640 p=2449 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 21:17:47,233 p=2449 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 21:17:47,252 p=2449 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 21:17:47,284 p=2449 u=vagrant n=ansible | ERROR! conflicting action statements: copy, validate
+
+The error appears to be in '/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 27, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Configurar sudo sin contraseña para el grupo 2PSupervisores
+  ^ here
+
+2024-11-19 21:17:47,286 p=2449 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 21:17:47,286 p=2449 u=vagrant n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 21:22:58,817 p=2569 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 21:22:58,826 p=2569 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 21:23:00,040 p=2569 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 21:23:00,057 p=2569 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 21:23:00,085 p=2569 u=vagrant n=ansible | ERROR! conflicting action statements: copy, validate
+
+The error appears to be in '/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 27, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Configurar sudo sin contraseña para el grupo 2PSupervisores
+  ^ here
+
+2024-11-19 21:23:00,087 p=2569 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 21:23:00,088 p=2569 u=vagrant n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 21:33:42,036 p=2700 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 21:33:42,047 p=2700 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 21:33:43,314 p=2700 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 21:33:43,333 p=2700 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 21:33:43,365 p=2700 u=vagrant n=ansible | ERROR! conflicting action statements: template, validate
+
+The error appears to be in '/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 28, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Configurar sudo sin contraseña para el grupo 2PSupervisores
+  ^ here
+
+2024-11-19 21:33:43,366 p=2700 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 21:33:43,367 p=2700 u=vagrant n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 21:37:27,918 p=2818 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 21:37:27,930 p=2818 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 21:37:29,192 p=2818 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 21:37:29,212 p=2818 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 21:37:29,241 p=2818 u=vagrant n=ansible | ERROR! conflicting action statements: lineinfile, validate
+
+The error appears to be in '/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 27, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Configurar sudo sin contraseña para el grupo 2PSupervisores
+  ^ here
+
+2024-11-19 21:37:29,244 p=2818 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 21:37:29,244 p=2818 u=vagrant n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 22:05:18,997 p=2939 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 22:05:19,007 p=2939 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 22:05:20,202 p=2939 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:05:20,220 p=2939 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 22:05:20,265 p=2939 u=vagrant n=ansible | TASK [2do_parcial : debug] ************************************************************************************************
+2024-11-19 22:05:20,280 p=2939 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 22:05:20,290 p=2939 u=vagrant n=ansible | TASK [2do_parcial : Crear directorio alumno] ******************************************************************************
+2024-11-19 22:05:20,641 p=2939 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:05:20,650 p=2939 u=vagrant n=ansible | TASK [2do_parcial : Crear directorio equipo] ******************************************************************************
+2024-11-19 22:05:20,888 p=2939 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:05:20,898 p=2939 u=vagrant n=ansible | TASK [2do_parcial : Generar archivo datos_alumno.txt] *********************************************************************
+2024-11-19 22:05:21,637 p=2939 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 22:05:21,645 p=2939 u=vagrant n=ansible | TASK [2do_parcial : Generar archivo datos_equipo.txt] *********************************************************************
+2024-11-19 22:05:22,087 p=2939 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 22:05:22,096 p=2939 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudo sin contraseña para el grupo 2PSupervisores] ******************************************
+2024-11-19 22:05:22,399 p=2939 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/home/vagrant/.ansible/tmp/ansible-tmp-1732053922.1154675-3171-67244109222350/tmp6bkwet36' -> b'/etc/sudoers.d/2psupervisores'
+2024-11-19 22:05:22,400 p=2939 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "The destination directory (/etc/sudoers.d) is not writable by the current user. Error was: [Errno 13] Permission denied: b'/etc/sudoers.d/.ansible_tmpwarsd7z_2psupervisores'"}
+2024-11-19 22:05:22,402 p=2939 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 22:05:22,403 p=2939 u=vagrant n=ansible | localhost                  : ok=6    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 22:14:35,072 p=3218 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************************
+2024-11-19 22:14:35,082 p=3218 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************
+2024-11-19 22:14:36,507 p=3218 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:14:36,525 p=3218 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************************
+2024-11-19 22:14:36,565 p=3218 u=vagrant n=ansible | TASK [2do_parcial : debug] ************************************************************************************************
+2024-11-19 22:14:36,581 p=3218 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 22:14:36,593 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Crear directorio alumno] ******************************************************************************
+2024-11-19 22:14:36,990 p=3218 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:14:37,000 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Crear directorio equipo] ******************************************************************************
+2024-11-19 22:14:37,252 p=3218 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:14:37,262 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Generar archivo datos_alumno.txt] *********************************************************************
+2024-11-19 22:14:38,034 p=3218 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:14:38,042 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Generar archivo datos_equipo.txt] *********************************************************************
+2024-11-19 22:14:38,509 p=3218 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 22:14:38,519 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudo sin contraseña para el grupo 2PSupervisores] ******************************************
+2024-11-19 22:14:38,840 p=3218 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 22:14:38,851 p=3218 u=vagrant n=ansible | TASK [2do_parcial : Validar configuración sudoers] ************************************************************************
+2024-11-19 22:14:39,201 p=3218 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 22:14:39,211 p=3218 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************
+2024-11-19 22:14:39,229 p=3218 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 22:14:39,248 p=3218 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************
+2024-11-19 22:14:39,249 p=3218 u=vagrant n=ansible | localhost                  : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

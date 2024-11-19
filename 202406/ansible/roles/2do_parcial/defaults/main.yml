@@ -1,0 +1,8 @@
+---
+# defaults file for 2do_parcial
+nombre: "santiago"
+apellido: "guzman"
+division: "113"
+ip: "192.168.56.3"
+distro: "Ubuntu 22.04.4 LTS (Jammy Jellyfish)"
+cores: "2"
